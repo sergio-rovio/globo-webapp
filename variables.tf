@@ -46,3 +46,8 @@ variable "tfe_workspace_name" {
   type    = string
   default = "(Required) Name of networking workspace to get information"
 }
+
+variable "playbook_repository" {
+  type        = string
+  description = "(Required) URI of Ansible playbook"
+}
