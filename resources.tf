@@ -26,7 +26,7 @@ locals {
 ##################################################################################
 
 resource "aws_iam_instance_profile" "main" {
-  name = "${local.name_prefix} -webapp"
+  name = "${local.name_prefix}-webapp"
   role = var.ec2_role_name
 
   tags = local.common_tags
